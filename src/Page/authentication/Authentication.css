@@ -1,0 +1,65 @@
+.backGround {
+    background: url(https://source.unsplash.com/collection/69151529) no-repeat 50% fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.auth-card {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 15%;
+}
+
+.side-1 {
+    background-image: url(https://source.unsplash.com/collection/15135267/);
+    background-size: cover;
+    width: 40%;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 80px 40px;
+}
+
+.side-2 {
+    padding: 60px;
+    width: 60%;
+}
+
+.auth-logo {
+    display: block;
+    width: 150px;
+    margin: 0 auto 10px auto;
+}
+
+.auth-form {
+    display: grid;
+    gap: 10px;
+}
+
+@media screen and (max-width:992px) {
+    .auth-card {
+        flex-direction: column;
+        top: 5%;
+    }
+    .side-1 {
+        width: 100%;
+        background-position: center;
+    }
+    .side-2 {
+        padding: 20px 60px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    
+    .side-2 {
+        padding: 20px ;
+        width: 100%;
+    }
+}
